@@ -1,0 +1,38 @@
+Exercise 1
+
+test =print("Hello World")
+-------------------------------------------------------
+1 - Building basic functions with numpy
+
+s=1/(1+math.exp(-x))
+-------------------------------------------------------
+Exercise 3 - sigmoid
+
+s=1/(1+np.exp(-x))
+-------------------------------------------------------
+Exercise 4 - sigmoid_derivative
+
+ s=1/(1+np.exp(x))
+ ds=s*(1-s)
+ -----------------------------------------------------
+Exercise 5 - image2vector
+
+ v = image.reshape((image.shape[0] * image.shape[1] * image.shape[2],1))
+ ----------------------------------------------------------------
+ Normalizing rows
+ 
+ x_norm = np.linalg.norm(x,ord=2, axis=1, keepdims=True) 
+ x=np.divide(x,x_norm)
+    ---------------------------------------------------------
+   Exercise 7 - softmax
+   
+ x_exp =np.exp(x)
+ x_sum =np.sum(x_exp, axis = 1, keepdims = True)
+ s =np.divide(x_exp,x_sum)
+    ------------------------------------------
+    Vectorization l1
+ loss=np.sum(np.absolute(y-yhat))
+    ------------------------------------------------------
+    Vectorization l2
+ loss=np.sum(np.power(y-yhat,2))
+############################################# هنا معرفتش استخدم np.dot
